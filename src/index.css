@@ -1,0 +1,147 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(242, 242, 238);
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  gap: 18px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+  align-items: flex-start;
+  /* justify-content: center; */
+  /* background-color: rgb(64, 105, 105); */
+}
+
+.desserts-column {
+  flex: 3 ;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* gap: 18px; */
+  margin-top: 32px;
+}
+
+.cart-column {
+  flex: 1;
+  position: sticky;
+  top: 40px;
+}
+
+.grid-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /* background-color: #3a271e; */
+} 
+
+.order-card{
+  width: 220px;
+}
+
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: visible;
+  margin-bottom: 25px;
+}
+
+.order-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.add-to-cart-btn {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #b68d88 ;
+  padding: 10px 20px;
+  border-radius:  25px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.order-info {
+  margin-top: 35px;
+  padding-left: 5px;
+}
+
+.category {
+    color: #99524a;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    margin-top: 0;
+}
+
+.order-description {
+    color: #371709; 
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.price {
+    color: #ac340f;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 4px;
+}
+
+.main-title {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3a271e;
+    margin-bottom: 30px;
+}
+
+.cart-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    min-height: 300px;
+    text-align: center;
+}
+
+.cart-card h3 {
+    color: #c73b0f;
+    text-align: left;
+    margin-top: 0;
+}
+
+.cart-card p {
+    color: #8b361dce;
+    text-align: left;
+}
+
+.cart-card i {
+    color: #aaa3a1;
+    text-align: left;
+    font-size:50px;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: flex;    
+    flex-direction: column;
+  }
+}
