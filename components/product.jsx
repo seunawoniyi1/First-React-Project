@@ -6,7 +6,7 @@ export default function Product({img, category, order_description, price}) {
                 <div className="img-container">
                     <img className="order-img" src={img} alt="some pastry" />
                     <button className="add-to-cart-btn">
-                    <i className="fa-solid fa-cart-plus" alt="add-to-cart-btn">Add to Cart</i>
+                    <i className="fa-solid fa-cart-plus" alt="add-to-cart-btn"> Add to Cart</i>
                     </button>
                 </div>
 
